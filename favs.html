@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>АльфаРыболов | Фавориты</title>
-    <link rel="stylesheet" href="{% static 'generic.css' %}">
-    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="static/generic.css">
+    <link rel="icon" href="static/favicon.ico">
+    <script src="https://kit.fontawesome.com/1dc8f46dd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/1dc8f46dd7.css" crossorigin="anonymous">
 </head>
 <body>
     <div id="header">
-        <a href="main.html" id="mainlink">
-            <img src="static/icon.png"> АльфаРыболов
+        <a href="index.html" id="mainlink">
+            <img src="media/icon.png"> АльфаРыболов
         </a>
         <div id="header-links">
-            <a href="main.html" class="hlink activelink">Главная</a>
+            <a href="index.html" class="hlink activelink">Главная</a>
             <a href="catalog.html" class="hlink" id="cat">Каталог</a>
             <div id="cataloglinks">
                 <a href="catalog.html?filter=all" class="rlinks">Все</a>

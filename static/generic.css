@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     font-family: "Manrope", sans-serif;
@@ -133,7 +134,7 @@ body{
 }
 .fillerimage img{
     height: 15vh;
-    width: 99vw;
+    width: 98vw;
     object-fit: cover;
 }
 #map{
@@ -141,17 +142,20 @@ body{
     text-align: center;
 }
 #map iframe{
-    width: 99vw;
+	width: 99%;
     height: 700px;
+	border: 0;
 }
-#text{
+#map #text{
     text-align: center;
     text-overflow: unset;
+	width: 100vw;
 }
 .atext{
     font-weight: 600;
     padding: 10px 5%;
 	font-size: 30px;
+	text-align: center;
 }
 .atext a{
 	color: cornflowerblue;
