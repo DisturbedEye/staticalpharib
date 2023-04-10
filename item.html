@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>АльфаРыболов | {{ item.name }}</title>
+    <link rel="stylesheet" href="{% static 'generic.css' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+    <div id="header">
+        <a href="main.html" id="mainlink">
+            <img src="static/icon.png"> АльфаРыболов
+        </a>
+        <div id="header-links">
+            <a href="main.html" class="hlink activelink">Главная</a>
+            <a href="catalog.html" class="hlink" id="cat">Каталог</a>
+            <div id="cataloglinks">
+                <a href="catalog.html?filter=all" class="rlinks">Все</a>
+				<a href="catalog.html?filter=rods" class="rlinks">Удочки, удилища и спиннинги</a>
+				<a href="catalog.html?filter=coil" class="rlinks">Катушки</a>
+				<a href="catalog.html?filter=accs" class="rlinks">Аксессуары</a>
+				<a href="catalog.html?filter=bait" class="rlinks">Приманки</a>
+				<a href="catalog.html?filter=fibers" class="rlinks">Лески и плетенные шнуры</a>
+				<a href="catalog.html?filter=box" class="rlinks">Хранение и переноска снастей</a>
+				<a href="catalog.html?filter=cam" class="rlinks">Подводные фото- и видеокамеры</a>
+            </div>
+            <a href="about.html" class="hlink">О нас</a>
+        </div>
+        <div id="header-account">
+            <a href="favs.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
