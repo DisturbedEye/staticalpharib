@@ -218,6 +218,8 @@ body{
 }
 #goods .cgood .info{
 	display: grid;
+	text-decoration: none;
+	color: black;
 	grid-auto-flow: row;
 	grid-template-rows: 30% max-content 40%;
 }
@@ -254,6 +256,8 @@ body{
 	padding: 10px;
 	width: 90%;
 	z-index: 3;
+	text-decoration: none;
+	color: cornflowerblue;
 }
 #goods .cbutton:hover{
 	cursor: pointer;
