@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
-    <title>АльфаРыболов | {{ item.name }}</title>
-    <link rel="stylesheet" href="{% static 'generic.css' %}">
-    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <title>АльфаРыболов | AFAFGAEWG</title>
+    <link rel="stylesheet" href="static/generic.css">
+    <link rel="icon" href="static/favicon.ico">
+    <script src="https://kit.fontawesome.com/1dc8f46dd7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script>
+        let params = new URLSearchParams(location.search);
+        let id = params.get('id');
+    </script>
     <div id="header">
-        <a href="main.html" id="mainlink">
-            <img src="static/icon.png"> АльфаРыболов
+        <a href="index.html" id="mainlink">
+            <img src="media/icon.png"> АльфаРыболов
         </a>
         <div id="header-links">
-            <a href="main.html" class="hlink activelink">Главная</a>
+            <a href="index.html" class="hlink">Главная</a>
             <a href="catalog.html" class="hlink" id="cat">Каталог</a>
             <div id="cataloglinks">
                 <a href="catalog.html?filter=all" class="rlinks">Все</a>
@@ -33,5 +37,20 @@
             </a>
         </div>
     </div>
+    <div id="content">
+        <h2>item</h2>
+        
+    </div>
+    <div id="bottom-links">
+		<a href="../">
+            <i class="fa-sharp fa-solid fa-house"></i>Главная
+        </a>
+		<a href="../catalog">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>Каталог
+        </a>
+		<a href="../about">
+            <i class="fa-sharp fa-solid fa-circle-info"></i>О нас
+        </a>
+	</div>
 </body>
 </html>

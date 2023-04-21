@@ -39,11 +39,9 @@
     <div id="content">
         <h2>Войти</h2>
         <form method="post" id="authform" name="Auth">
-            <p>{{ form.username.errors }}</p>
-            <p>{{ form.username }}</p>
-            <p>{{ form.password.errors }}</p>
-            <p>{{ form.password }}</p>
-            <p><button type="submit">Войти</button></p>
+            <input name="username" type="text">
+            <input name="password" type="password">
+            <button type="submit">Войти</button>
         </form>
     </div>
     <div id="bottom-links">

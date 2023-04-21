@@ -7,11 +7,11 @@
 </head>
 <body>
     <div id="header">
-        <a href="main.html" id="mainlink">
+        <a href="index.html" id="mainlink">
             <img src="static/icon.png"> АльфаРыболов
         </a>
         <div id="header-links">
-            <a href="main.html" class="hlink">Главная</a>
+            <a href="index.html" class="hlink">Главная</a>
             <a href="catalog.html" class="hlink" id="cat">Каталог</a>
             <div id="cataloglinks">
                 <a href="catalog.html?filter=all" class="rlinks">Все</a>
@@ -30,6 +30,14 @@
                 <i class="fa-solid fa-user"></i>
             </a>
         </div>
+    </div>
+    <div id="content">
+        <h2>Регистрация</h2>
+        <form method="post" id="authform" name="Reg">
+            <input name="username" type="text">
+            <input name="password" type="password">
+            <button type="submit">Зарегистрироваться</button>
+        </form>
     </div>
     <div id="bottom-links">
 		<a href="../">
