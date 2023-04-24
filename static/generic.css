@@ -163,6 +163,23 @@ body{
     text-overflow: unset;
 	width: 100vw;
 }
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+}
+.slideshow-container img{
+	height: 33vh;
+	object-fit: cover;
+}
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
 .atext{
     font-weight: 600;
     padding: 10px 5%;
@@ -274,74 +291,6 @@ body{
 #goods .cbutton:hover{
 	cursor: pointer;
 }
-.carousel {
-	position: relative;
-	perspective: 100px;
-	height: 20vh;
-}
-.carousel ol, li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.carousel__viewport {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	counter-reset: item;
-	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
-	height: inherit;
-}
-.carousel__slide {
-	position: relative;
-	flex: 0 0 100%;
-	width: 100%;
-	counter-increment: item;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-.carousel__slide:nth-child(1) {
-	background-image: url("../media/filler1.jpg");
-}
-.carousel__slide:nth-child(2) {
-	background-image: url("../media/filler2.jpg");
-}
-.carousel__slide:nth-child(3) {
-	background-image: url("../media/filler3.jpg");
-}
-.carousel__slide:nth-child(4) {
-	background-image: url("../media/filler4.jpg");
-}
-.carousel__snapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	scroll-snap-align: center;
-}
-@media (hover: hover) {
-	.carousel__snapper {
-	animation-name: tonext, snap;
-	animation-timing-function: ease;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	}
-
-	.carousel__slide:last-child .carousel__snapper {
-	animation-name: tostart, snap;
-	}
-}
-@media (prefers-reduced-motion: reduce) {
-	.carousel__snapper {
-	animation-name: none;
-	}
-}
 #item-content{
 	margin: 3rem;
 	display: grid;
@@ -353,7 +302,7 @@ body{
 .gallery {
 	margin: 1rem;
 	display: grid;
-	grid-template-columns: repeat(10, 80%);
+	grid-template-columns: repeat(10, 100%);
 	grid-template-rows: 1fr;
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
@@ -475,5 +424,8 @@ body{
 	}
 	.gallery{
 		height: 25vh;
+	}
+	#item-content{
+		grid-template-columns: 1fr;
 	}
 }
